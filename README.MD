@@ -19,7 +19,7 @@ Para leer un tipo de dato se usa la siguiente sintaxis:
 
 Para imprimir un tipo de dato usamos la siguiente sintaxis:
 
-    printf("format_specifier", val)
+    ```printf("format_specifier", val)```
 
 Nota: Podemos usar **cin** y **cout**, sin embargo **scanf** y **printf** son más rapidos cuando se tienen que realizar operaciones de lectura y escritura millones de veces. 
 
