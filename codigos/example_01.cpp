@@ -2,7 +2,7 @@
 #include <cstdio>
 using namespace std;
 
-int main() {
+int main(int argc, char *argv[]) {
     int n1;
     long int n2;
     char n3;
