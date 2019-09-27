@@ -1,11 +1,14 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-
-
-
-int main()
-{
+/**
+ * @brief 
+ * 
+ * @param argc 
+ * @param argv 
+ * @return int 
+ */
+int main(int argc,char *argv[]){
     int n;
     cin >> n;
     cin.ignore(numeric_limits<streamsize>::max(), '\n');

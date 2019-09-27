@@ -1,20 +1,49 @@
-# Compilación
+# Estructuras de control 
+## Estructura condicional IF
 
-C/C++ es son lenguajes compilados. Para que un programa corra es necesario procesar el texto dentro del programa(usualmente dentro de un archivo fuente de texto) con un compilador, el cual produce una serie de archivos objetos, los cuales son combinados por un linker en un programa ejecutable. Un programa en C++ usualmente consiste de muchos archivos fuentes de código.
+if: Ejecuta el cuerpo o conjunto de lineas de  código que se encuentran entre las llaves cuando la condición entre parentesis sea cierta.
 
-[!image]
+``` 
+if (condition) {
+    statement1;
+    ...
+}
+```
 
-Al final un ejecutable termina siendo creado para una específica combinación de hardware/software, por lo tanto, un ejecutable no es portable.
+`if - else`: Ejecuta las sentencias de código que se encuentran entre llaves justo después del `if` (statement1) cuando la condición entre parentesis es cierta y ejecuta las sentencias de código que se encuentran entre las llaves justo después del `else` (statement2) cuando la condición es falsa.
+```
+if (condition) {
+    statement1;
+    ...
+}
+else 
+{
+    statement2;
+    ...
+}
+```
 
-Una de las grandes diferencia es el tamaño que ocupa un ejecutable hecho con librerias de C++ vs uno con librerias de C.
+`if - else if - else`: En esta estructura de control para cada evaluación de la condición if se evalua si y sólo si, todas las condiciones previas fueron falsas.
+En cuanto una de las condiciones resulta verdadera, las sentencias entre llaves después de esas condición son evaluadas y se pasa al final de la estructura de control.
 
-consideremos por ejemplo el típico "Hola Mundo"
-
-
-
----
-| 6,557,987 | example_00.exe |
-
-|   268,834 | example_00_with_C.exe |
-
-Es decir el ejecutable de un "Hola Mundo" gerado usando la libreria "iostream" pesa 30 veces el generado usando la librería "stdio.h".
+```
+if(first condition) {
+    statement1
+    ...
+}
+else if(second condition) {
+    statement2
+    ...
+}
+.
+.
+.
+else if(n'th condition) {
+    statememtn
+    ...
+}
+else 
+{
+    ...
+}
+```
